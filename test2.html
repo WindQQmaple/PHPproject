@@ -20,6 +20,19 @@ echo "My house is " . $COLOR . "<br>";
 echo "My boat is " . $coLOR . "<br>";
 echo "Hello World!<br>";
 
+$x=5;
+$y=10;
+
+function myTest() {
+  global $x,$y;
+  $y=$x+$y;
+}
+
+myTest();
+echo $y;
+
+
+
 ?>
 
 </body>
